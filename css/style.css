@@ -1,0 +1,262 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: local('Open Sans Regular'), local('Open-Sans-Regular'),
+    url('../fonts/OpenSansRegular.woff2') format('woff2'),
+	  url('../fonts/OpenSansRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: local('Open Sans Semibold'), local('Open Sans-Semibold'),
+    url('../fonts/OpenSansSemiBold.woff2') format('woff2'),
+		url('../fonts/OpenSansSemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: local('Open Sans Bold'), local('Open Sans Bold'),
+    url('../fonts/OpenSansBold.woff2') format('woff2'),
+		url('../fonts/OpenSansBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: local('Open Sans Italic'), local('Open-Sans-Italic'),
+    url('../fonts/OpenSansItalic.woff2') format('woff2'),
+		url('../fonts/OpenSansItalic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+  font-display: swap;
+}
+
+/*glob*/
+.page {
+  min-width: 320px;
+	font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1630px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+:root {
+  --background-violet-light: #D1A9F0;
+  --background-violet-normal: #9D5CD0;
+  --background-violet-dark: #7943A4;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-text: #333333;
+  --color-violet-text: #C283F3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0 );
+  overflow: hidden;
+}
+
+.btn {
+  border-radius: 100px;
+}
+/*header*/
+/*header-top*/
+.header__top {
+  padding: 30px 0;
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.header__container {
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 179px;
+}
+
+.header__nav {
+  margin-right: auto;
+}
+
+.nav__list {
+  gap: 62px;
+}
+
+.nav__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header__link-enter {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/*header--bottom*/
+.header__bottom {
+  padding: 23px 0 28px 0;
+  color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header__menu {
+  margin-right: auto;
+}
+
+.menu__list {
+  gap: 96px;
+}
+
+.menu__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.search-form__btn {
+  margin-right: 9px;
+}
+
+.search-form__input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.search-form__input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/*hero*/
+.hero {
+  padding: 63px 0px 122px 0px;
+}
+
+.hero__bg-container {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  margin-top: -640px;
+  width: 100%;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.hero__slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.hero__slide--image1 {
+  background-image: url(../img/hero-bg-1.jpg);
+}
+
+.hero__slide--image2 {
+  background-image: url(../img/hero-bg-2.jpg);
+}
+
+.hero__slide--image3 {
+  background-image: url(../img/hero-bg-3.jpg);
+}
+
+.hero__content {
+  width: 50%;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 1px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+  color: var(--color-white);
+}
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 92px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-white);
+}
+
+.hero__btn {
+  padding: 22.5px 35px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-white);
+  background-color: var(--background-violet-normal);
+}
+
