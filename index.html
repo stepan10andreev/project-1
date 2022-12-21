@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard</title>
+    <link rel="stylesheet" href="libs/choices.min.css">
+    <link rel="stylesheet" href="libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -50,9 +52,9 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="header__link-enter">
+        <a href="#" class="header__link-enter link-enter">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+            <path class="link-enter__icon" d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
             </svg>
           Войти
         </a>
@@ -139,70 +141,99 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about offset">
       <div class="about__container container">
-        <h2 class="about__title">
+        <h2 class="about__title title">
           О&nbsp;нас
         </h2>
-        <p class="about__descr">
+        <p class="about__descr desc">
           Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
         </p>
       </div>
     </section>
 
-    <section class="gallery">
-      <div class="gallery__container container">
-        <div class="gallery__wra">
-          <h2 class="gallery__title">
-
+    <section class="gallery offset">
+      <div class="gallery__container container flex">
+        <div class="gallery__wrapper">
+          <h2 class="gallery__title title">
+            Галерея
           </h2>
           <p class="gallery__subtitle">
-
+            Фильтр:
           </p>
 
-          <form action="">
-            <select name="" id="">
-              <option value=""></option>
+          <form action="" class="gallery__form">
+            <select name="gallery-select" class="gallery__select">
+              <option value="Живопись">Живопись</option>
+              <option value="">Выбор 1</option>
+              <option value="">Выбор 2</option>
             </select>
-            <input type="checkbox">XIX век
-            <input type="checkbox">XX&nbsp;век
-            <input type="checkbox">Современность
+            <div class="gallery__checkbox-wrapper flex">
+              <label class="gallery__label" tabindex="0">
+                <input class="gallery__checkbox" type="checkbox">
+                <span class="gallery__checkbox-fake"></span>
+                <span class="gallery__checkbox-text">XIX век</span>
+              </label>
+              <label class="gallery__label" tabindex="0">
+                <input class="gallery__checkbox" type="checkbox" checked>
+                <span class="gallery__checkbox-fake"></span>
+                <span class="gallery__checkbox-text">XX&nbsp;век</span>
+              </label>
+              <label class="gallery__label" tabindex="0">
+                <input class="gallery__checkbox" type="checkbox">
+                <span class="gallery__checkbox-fake"></span>
+                <span class="gallery__checkbox-text">Современность</span>
+              </label>
+            </div>
           </form>
         </div>
-
-        <div class="gallery__swiper swiper slider__swiper">
-          <div class="gallery__swiper-navination swiper-navination"></div>
-          <div class="gallery__swiper-wrapper swiper-wrapper slider__wrapper">
-            <div class="swiper-slide slider__slide slider__slide_img1">
-              <button class="swiper_btn">
+        <div class="gallery__swiper swiper">
+          <div class="gallery__swiper-wrapper swiper-wrapper">
+            <div class="gallery__swiper-slide swiper-slide slide_img1">
+              <button class="gallery__swiper-btn swiper-btn">
                 <img src="img/gallery-1.jpg" alt="picture-1">
               </button>
             </div>
-            <div class="swiper-slide slider__slide slider__slide-img2">
-              <button class="swiper_btn">
+            <div class="gallery__swiper-slide swiper-slide slide-img2">
+              <button class="gallery__swiper-btn swiper-btn">
                 <img src="img/gallery-2.jpg" alt="picture-2">
               </button>
             </div>
-            <div class="swiper-slide slider__slide slider__slide-img3">
-              <button class="swiper_btn">
+            <div class="gallery__swiper-slide swiper-slide slide-img3">
+              <button class="gallery__swiper-btn swiper-btn">
                 <img src="img/gallery-3.jpg" alt="picture-3">
               </button>
             </div>
-            <div class="swiper-slide slider__slide slider__slide-img4">
-              <button class="swiper_btn">
+            <div class="gallery__swiper-slide swiper-slide slide-img4">
+              <button class="gallery__swiper-btn swiper-btn">
                 <img src="img/gallery-4.jpg" alt="picture-4">
               </button>
             </div>
-            <div class="swiper-slide slider__slide slider__slide-img5">
-              <button class="swiper_btn">
+            <div class="gallery__swiper-slide swiper-slide slide-img5">
+              <button class="gallery__swiper-btn swiper-btn">
                 <img src="img/gallery-5.jpg" alt="picture-5">
               </button>
             </div>
-            <div class="swiper-slide slider__slide slider__slide-img6">
-              <button class="swiper_btn">
+            <div class="gallery__swiper-slide swiper-slide slide-img6">
+              <button class="gallery__swiper-btn swiper-btn">
                 <img src="img/gallery-6.jpg" alt="picture-6">
               </button>
             </div>
+          </div>
+          <div class="gallery__swiper-button-prev swiper-button-prev">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666"/>
+              <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="black"/>
+              <path d="M16 20L11 15L16 10" stroke="white"/>
+              </svg>
+          </div>
+          <div class="gallery__swiper-pagination swiper-pagination"></div>
+          <div class="gallery__swiper-button-next swiper-button-next">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666"/>
+              <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="black"/>
+              <path d="M14 20L19 15L14 10" stroke="white"/>
+              </svg>
           </div>
         </div>
       </div>
@@ -478,7 +509,7 @@
         <h3 class="projects__subtitle">
           Партнёры проектов:
         </h3>
-        <div class="projects__swiper swiper slider__swiper">
+ <!--        <div class="projects__swiper swiper slider__swiper">
           <div class="projects__swiper-wrapper swiper-wrapper slider__wrapper">
             <div class="swiper-slide slider__slide">
               <img src="img/projects-img-1.png" alt="projects-image-1">
@@ -509,7 +540,7 @@
             </div>
           </div>
           <div class="swiper-pagination"></div>
-        </div>
+        </div>-->
       </div>
     </section>
 
@@ -585,5 +616,10 @@
       </a>
     </div>
   </footer>
+
+
+  <script src="libs/swiper-bundle.min.js"></script>
+  <script src="libs/choices.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
