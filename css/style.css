@@ -259,27 +259,43 @@ img {
   overflow: hidden;
 }
 
+@keyframes hero {
+  0% {
+    background-image: url(../img/hero-bg-1.jpg);
+    transition-timing-function: cubic-bezier (.1,.7,1,1);
+  }
+
+  33% {
+    background-image: url(../img/hero-bg-2.jpg);
+    transition-timing-function: cubic-bezier (.1,.7,1,1);
+  }
+
+  66% {
+    background-image: url(../img/hero-bg-3.jpg);
+    transition-timing-function: cubic-bezier (.1,.7,1,1);
+  }
+
+  99%{
+    background-image: url(../img/hero-bg-1.jpg);
+    transition-timing-function: cubic-bezier (.1,.7,1,1);
+  }
+}
+
 .hero__slide {
   position: absolute;
   width: 100%;
   height: 100%;
+  animation: hero 21s infinite 0s normal both;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
+
 }
 
 .hero__slide--image1 {
   background-image: url(../img/hero-bg-1.jpg);
 }
 
-.hero__slide--image2 {
-  background-image: url(../img/hero-bg-2.jpg);
-}
-
-.hero__slide--image3 {
-  background-image: url(../img/hero-bg-3.jpg);
-}
 
 .hero__content {
   width: 50%;
@@ -570,11 +586,34 @@ img {
 }
 
 .swiper-button-next {
-  top: 17px;
+  top: 30px;
   left: 80px;
 }
 
 .swiper-button-prev {
-  top: 17px;
-  left: 0;
+  top: 30px;
+  left: 5px;
 }
+
+.swipper-button-fill {
+  transition: fill 0.3s ease-in-out;
+}
+
+.gallery__swiper-button:focus {
+  outline: none;
+}
+
+.gallery__swiper-button:focus-visible .swiper-button-svg {
+  outline: 2px solid #ffffff;
+  border-radius: 100px;
+}
+
+.gallery__swiper-button:hover .swipper-button-fill {
+  fill: var(--background-violet-normal);
+}
+
+.gallery__swiper-button:active .swiper-button-svg {
+  outline: 2px solid #000000;
+  border-radius: 100px;
+}
+
