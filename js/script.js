@@ -4,7 +4,7 @@ const choices = new Choices(element, {
   itemSelectText: '',
 	shouldSort: false,
   position: 'bottom'
-});
+})
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 3,
@@ -40,6 +40,31 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
-		clickable: true
+		clickable: true,
   }
 })
+
+
+new Accordion('.accordion-list', {
+	elementClass: 'accordion',
+	triggerClass: 'accordion__control',
+	panelClass: 'accordion__content',
+	activeClass: 'accordion--active'
+})
+
+
+let tabsBtn = document.querySelectorAll('.tabs-nav__btn');
+let tabsItem = document.querySelectorAll('.tabs-item');
+
+tabsBtn.forEach(function(element){
+  element.addEventListener('click', function(e){
+    const path = e.currentTarget.dataset.path;
+
+    tabsBtn.forEach(function(btn){btn.classList.remove('tabs-nav__btn--active')});
+    e.currentTarget.classList.add('tabs-nav__btn--active');
+
+    tabsItem.forEach(function(element){ element.classList.remove('tabs-item--active')});
+    document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item--active');
+  })
+});
+

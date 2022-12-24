@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard</title>
+    <link rel="stylesheet" href="libs/accordion.min.css">
     <link rel="stylesheet" href="libs/choices.min.css">
     <link rel="stylesheet" href="libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -250,7 +251,7 @@
 
         <div class="catalog__content flex">
           <div class="tabs-content">
-            <article class="catalog__article article-painter flex">
+            <article class="catalog__article article-painter flex tabs-item tabs-item--active" data-target="Ghirlandaio">
               <div class="article-painter__img-wrapper">
                 <picture>
                   <source srcset="img/catalog-image-Ghirlandaio-320.jpg" media="(max-width: 630px)">
@@ -259,7 +260,6 @@
                   <img class="article-painter__image" src="img/catalog-image-Ghirlandaio.jpg" srcset="img/catalog-image-Ghirlandaio.jpg" alt="Domenico Ghirlandaio">
                 </picture>
               </div>
-
               <div class="artcile-painter__descr-wrapper flex">
                 <h3 class="article-painter__name">
                   Доменико Гирландайо
@@ -273,7 +273,7 @@
               </div>
             </article>
 
-            <article class="catalog__article article-empty flex visually-hidden">
+            <article class="catalog__article article-empty flex tabs-item" data-target="empty">
               <div class="article-empty__img-wrapper">
                 <picture>
                   <source srcset="img/catalog-image-anonim-320.jpg" media="(max-width: 630px)">
@@ -282,7 +282,6 @@
                   <img class="article-painter__image" src="img/catalog-anonim.jpg" srcset="img/catalog-anonim.jpg" alt="Empty image">
                 </picture>
               </div>
-
               <div class="artcile-empty__descr-wrapper flex">
                 <h3 class="article-empty__heading">
                   Что мы&nbsp;о&nbsp;нём знаем?
@@ -290,7 +289,7 @@
                 <p class="article-empty__descr desc">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
-                <a href="#" class="article-empty__link">
+                <a href="#" class="article-empty__link empty-link">
                   В&nbsp;галерею
                 </a>
               </div>
@@ -298,9 +297,9 @@
           </div>
 
 
-          <div class="catalog__accordion">
-            <ul class="catalog__list list-reset">
-              <li class="accordion__item accordion">
+          <div class="catalog__accordion-block">
+            <ul class="accordion-list catalog__list list-reset">
+              <li class="accordion-list__item accordion">
                 <button class="accordion__btn btn-reset accordion__control flex">
                   <div class="accordion__btn-name">C&nbsp;1400 по&nbsp;1499&nbsp;гг</div>
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -309,55 +308,134 @@
                   <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
                   </svg>
                 </button>
-                <ul class="accordion__painer-list accordion__content list-reset tabs-nav visually-hidden">
-                  <li class="accordion__painter-item tabs-nav__item">
-                    <button class="tabs-nav__btn tabs-nav__btn--active btn-reset" data-path="Benedetto" aria-label="Бенедетто ди Биндо">
-                      Бенедетто ди&nbsp;Биндо
-                    </button>
-                  </li>
-                  <li class="accordion__painter-item tabs-nav__item">
-                    <button class="tabs-nav__btn btn-reset" data-path="Bergognone" aria-label="Бергоньоне, Амброджо">
-                      Бергоньоне, Амброджо
-                    </button>
-                  </li>
-                  <li class="accordion__painter-item tabs-nav__item">
-                    <button class="tabs-nav__btn btn-reset" data-path="Bissolo" aria-label="Биссоло, Франческо">
-                      Биссоло, Франческо
-                    </button>
-                  </li>
-                  <li class="accordion__painter-item tabs-nav__item">
-                    <button class="tabs-nav__btn btn-reset" data-path="Boltraffio" aria-label="Больтраффио, Джованни">
-                      Больтраффио, Джованни
-                    </button>
-                  </li>
-                  <li class="accordion__painter-item tabs-nav__item">
-                    <button class="tabs-nav__btn btn-reset" data-path="Bonsignori" aria-label="Бонсиньори, Франческо">
-                      Бонсиньори, Франческо
-                    </button>
-                  </li>
-                  <li class="accordion__painter-item tabs-nav__item">Боттичини, Рафаэлло</li>
-                  <li class="accordion__painter-item tabs-nav__item">Брамантино</li>
-                  <li class="accordion__painter-item tabs-nav__item">Бреа, Людовико</li>
-                  <li class="accordion__painter-item tabs-nav__item">Бьяджо д&rsquo;Антонио Туччи</li>
-                  <li class="accordion__painter-item tabs-nav__item">Веккьетта</li>
-                  <li class="accordion__painter-item tabs-nav__item">Андреа Верроккьо</li>
-                  <li class="accordion__painter-item tabs-nav__item">Доменико Гирландайо</li>
-                  <li class="accordion__painter-item tabs-nav__item">Беноццо Гоццоли</li>
-                  <li class="accordion__painter-item tabs-nav__item">Граначчи, Франческо</li>
-                  <li class="accordion__painter-item tabs-nav__item">Грегорио ди&nbsp;Чекко</li>
-                  <li class="accordion__painter-item tabs-nav__item">Джованни да&nbsp;Удине</li>
-                  <li class="accordion__painter-item tabs-nav__item">Джованни ди&nbsp;Паоло</li>
-                  <li class="accordion__painter-item tabs-nav__item">Джорджоне</li>
-                  <li class="accordion__painter-item tabs-nav__item">Парентино, Бернардо</li>
-                  <li class="accordion__painter-item tabs-nav__item">Пезеллино</li>
-                  <li class="accordion__painter-item tabs-nav__item">Пьетро Перуджино</li>
-                  <li class="accordion__painter-item tabs-nav__item">Перуцци, Бальдассаре</li>
-                  <li class="accordion__painter-item tabs-nav__item">Пизанелло</li>
-                  <li class="accordion__painter-item tabs-nav__item">Пинтуриккьо</li>
-                </ul>
+                <div class="accordion__content">
+                  <ul class="accordion__painter-list list-reset tabs-nav">
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="Benedetto" aria-label="Бенедетто ди Биндо">
+                        Бенедетто ди&nbsp;Биндо
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="Bergognone" aria-label="Бергоньоне, Амброджо">
+                        Бергоньоне, Амброджо
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="Bissolo" aria-label="Биссоло, Франческо">
+                        Биссоло, Франческо
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="Boltraffio" aria-label="Больтраффио, Джованни">
+                        Больтраффио, Джованни
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="Bonsignori" aria-label="Бонсиньори, Франческо">
+                        Бонсиньори, Франческо
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="Botticini" aria-label="Боттичини, Рафаэлло">
+                        Боттичини, Рафаэлло
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="Bramantino" aria-label="Брамантино">
+                        Брамантино
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="Brea" aria-label="Бреа, Людовико">
+                        Бреа, Людовико
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="Biagio" aria-label="Бьяджо д&rsquo;Антонио Туччи">
+                        Бьяджо д&rsquo;Антонио Туччи
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="Vecchietta" aria-label="Веккьетта">
+                        Веккьетта
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Андреа Верроккьо">
+                        Андреа Верроккьо
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset tabs-nav__btn--active" data-path="Ghirlandaio" aria-label="Доменико Гирландайо">
+                        Доменико Гирландайо
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Беноццо Гоццоли">
+                        Беноццо Гоццоли
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Граначчи, Франческо">
+                        Граначчи, Франческо
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Грегорио ди&nbsp;Чекко">
+                        Грегорио ди&nbsp;Чекко
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Джованни да&nbsp;Удине">
+                        Джованни да&nbsp;Удине
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Джованни ди&nbsp;Паоло">
+                        Джованни ди&nbsp;Паоло
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Джорджоне">
+                        Джорджоне
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Парентино, Бернардо">
+                        Парентино, Бернардо
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Пезеллино">
+                        Пезеллино
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Пьетро Перуджино">
+                        Пьетро Перуджино
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Перуцци, Бальдассаре">
+                        Перуцци, Бальдассаре
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Пизанелло">
+                        Пизанелло
+                      </button>
+                    </li>
+                    <li class="accordion__painter-item tabs-nav__item">
+                      <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Пинтуриккьо">
+                        Пинтуриккьо
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li class="accordion__item">
-                <button class="accordion__btn btn-reset flex">
+
+              <li class="accordion-list__item accordion">
+                <button class="accordion__btn btn-reset accordion__control flex">
                   <div class="accordion__btn-name">C&nbsp;1500 по&nbsp;1599&nbsp;гг</div>
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
@@ -365,9 +443,32 @@
                   <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
                   </svg>
                 </button>
+                <div class="accordion__content">
+
+                  <div class="accordion-empty flex">
+                    <div class="accordion-empty__block flex">
+                      <div class="accordion-empty__image">
+
+                      </div>
+                    </div>
+                    <div class="accordion-empty__content">
+                      <h3 class="accordion-empty__heading">
+                        Здесь пока пусто
+                      </h3>
+                      <p class="accordion-empty__descr">
+                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#" class="accordion-empty__link empty-link">
+                        В&nbsp;галерею
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
               </li>
-              <li class="accordion__item">
-                <button class="accordion__btn btn-reset flex">
+
+              <li class="accordion-list__item accordion">
+                <button class="accordion__btn btn-reset accordion__control flex">
                   <div class="accordion__btn-name">C&nbsp;1600 по&nbsp;1699&nbsp;гг</div>
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
@@ -375,9 +476,30 @@
                   <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
                   </svg>
                 </button>
+                <div class="accordion__content">
+                  <div class="accordion-empty flex">
+                    <div class="accordion-empty__block flex">
+                      <div class="accordion-empty__image">
+
+                      </div>
+                    </div>
+                    <div class="accordion-empty__content">
+                      <h3 class="accordion-empty__heading">
+                        Здесь пока пусто
+                      </h3>
+                      <p class="accordion-empty__descr">
+                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#" class="accordion-empty__link empty-link">
+                        В&nbsp;галерею
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="accordion__item">
-                <button class="accordion__btn btn-reset flex">
+
+              <li class="accordion-list__item accordion">
+                <button class="accordion__btn btn-reset accordion__control flex">
                   <div class="accordion__btn-name">C&nbsp;1700 по&nbsp;1799&nbsp;гг</div>
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
@@ -385,9 +507,30 @@
                   <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
                   </svg>
                 </button>
+                <div class="accordion__content">
+                  <div class="accordion-empty flex">
+                    <div class="accordion-empty__block flex">
+                      <div class="accordion-empty__image">
+
+                      </div>
+                    </div>
+                    <div class="accordion-empty__content">
+                      <h3 class="accordion-empty__heading">
+                        Здесь пока пусто
+                      </h3>
+                      <p class="accordion-empty__descr">
+                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#" class="accordion-empty__link empty-link">
+                        В&nbsp;галерею
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="accordion__item">
-                <button class="accordion__btn btn-reset flex">
+
+              <li class="accordion-list__item accordion">
+                <button class="accordion__btn btn-reset accordion__control flex">
                   <div class="accordion__btn-name">C&nbsp;1800 по&nbsp;1899&nbsp;гг</div>
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
@@ -395,9 +538,30 @@
                   <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
                   </svg>
                 </button>
+                <div class="accordion__content">
+                  <div class="accordion-empty flex">
+                    <div class="accordion-empty__block flex">
+                      <div class="accordion-empty__image">
+
+                      </div>
+                    </div>
+                    <div class="accordion-empty__content">
+                      <h3 class="accordion-empty__heading">
+                        Здесь пока пусто
+                      </h3>
+                      <p class="accordion-empty__descr">
+                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#" class="accordion-empty__link empty-link">
+                        В&nbsp;галерею
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="accordion__item">
-                <button class="accordion__btn btn-reset flex">
+
+              <li class="accordion-list__item accordion">
+                <button class="accordion__btn btn-reset accordion__control flex">
                   <div class="accordion__btn-name">C&nbsp;1900 по&nbsp;1999&nbsp;гг</div>
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
@@ -405,9 +569,30 @@
                   <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
                   </svg>
                 </button>
+                <div class="accordion__content">
+                  <div class="accordion-empty flex">
+                    <div class="accordion-empty__block flex">
+                      <div class="accordion-empty__image">
+
+                      </div>
+                    </div>
+                    <div class="accordion-empty__content">
+                      <h3 class="accordion-empty__heading">
+                        Здесь пока пусто
+                      </h3>
+                      <p class="accordion-empty__descr">
+                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#" class="accordion-empty__link empty-link">
+                        В&nbsp;галерею
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="accordion__item">
-                <button class="accordion__btn btn-reset flex">
+
+              <li class="accordion-list__item accordion">
+                <button class="accordion__btn btn-reset accordion__control flex">
                   <div class="accordion__btn-name">C&nbsp;2000&nbsp;г</div>
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
@@ -415,6 +600,26 @@
                   <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
                   </svg>
                 </button>
+                <div class="accordion__content">
+                  <div class="accordion-empty flex">
+                    <div class="accordion-empty__block flex">
+                      <div class="accordion-empty__image">
+
+                      </div>
+                    </div>
+                    <div class="accordion-empty__content">
+                      <h3 class="accordion-empty__heading">
+                        Здесь пока пусто
+                      </h3>
+                      <p class="accordion-empty__descr">
+                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#" class="accordion-empty__link empty-link">
+                        В&nbsp;галерею
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -667,6 +872,8 @@
   </footer>
 
 
+
+  <script src="libs/accordion.min.js"></script>
   <script src="libs/swiper-bundle.min.js"></script>
   <script src="libs/choices.min.js"></script>
   <script src="js/script.js"></script>
