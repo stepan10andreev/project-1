@@ -695,7 +695,7 @@
       </div>
     </section>
 
-    <section class="events">
+    <section class="events offset">
       <div class="events__container container">
         <h2 class="events__title title">
           События
@@ -857,10 +857,10 @@
 
     <section class="projects">
       <div class="projects__container container">
-        <h2 class="projects__title">
+        <h2 class="projects__title title">
           Проекты
         </h2>
-        <p class="projects__descr">
+        <p class="projects__descr desc">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости.
           Подробнее:
           <a href="#">
@@ -870,38 +870,70 @@
         <h3 class="projects__subtitle">
           Партнёры проектов:
         </h3>
- <!--        <div class="projects__swiper swiper slider__swiper">
-          <div class="projects__swiper-wrapper swiper-wrapper slider__wrapper">
-            <div class="swiper-slide slider__slide">
-              <img src="img/projects-img-1.png" alt="projects-image-1">
-            </div>
-            <div class="swiper-slide slider__slide">
-              <img src="img/projects-img-2.png" alt="projects-image-2">
-            </div>
-            <div class="swiper-slide slider__slide">
-              <img src="img/projects-img-3.png" alt="projects-image-3">
-            </div>
-            <div class="swiper-slide slider__slide">
-              <img src="img/projects-img-4.png" alt="projects-image-4">
-            </div>
-            <div class="swiper-slide slider__slide">
-              <img src="img/projects-img-5.png" alt="projects-image-5">
-            </div>
-            <div class="swiper-slide slider__slide">
-              <img src="img/projects-img-6.png" alt="projects-image-6">
-            </div>
-            <div class="swiper-slide slider__slide">
-              <img src="img/projects-img-7.png" alt="projects-image-7">
-            </div>
-            <div class="swiper-slide slider__slide">
-              <img src="img/projects-img-8.png" alt="projects-image-8">
-            </div>
-            <div class="swiper-slide slider__slide">
-              <img src="img/projects-img-9.png" alt="projects-image-9">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>-->
+
+        <div class="projects__swiper swiper">
+          <ul class="projects__list list-reset swiper-wrapper">
+            <li class="projects__item swiper-slide">
+                <a class="partners-link" href="#">
+                  <img class="partners-link__img" src="img/projects-img-1.png" alt="projects-image-1">
+                </a>
+            </li>
+            <li class="projects__item swiper-slide">
+                <a class="partners-link" href="#">
+                  <img class="partners-link__img" src="img/projects-img-2.png" alt="projects-image-2">
+                </a>
+            </li>
+            <li class="projects__item swiper-slide">
+                <a class="partners-link" href="#">
+                  <img class="partners-link__img" src="img/projects-img-3.png" alt="projects-image-3">
+                </a>
+            </li>
+            <li class="projects__item swiper-slide">
+                <a class="partners-link" href="#">
+                  <img class="partners-link__img" src="img/projects-img-4.png" alt="projects-image-4">
+                </a>
+            </li>
+            <li class="projects__item swiper-slide">
+                <a class="partners-link" href="#">
+                  <img class="partners-link__img" src="img/projects-img-5.png" alt="projects-image-5">
+                  </a>
+            </li>
+            <li class="projects__item swiper-slide">
+                <a class="partners-link" href="#">
+                  <img class="partners-link__img" src="img/projects-img-6.png" alt="projects-image-6">
+                </a>
+            </li>
+            <li class="projects__item swiper-slide">
+                <a class="partners-link" href="#">
+                  <img class="partners-link__img" src="img/projects-img-7.png" alt="projects-image-7">
+                </a>
+            </li>
+            <li class="projects__item swiper-slide">
+                <a class="partners-link" href="#">
+                  <img class="partners-link__img" src="img/projects-img-8.png" alt="projects-image-8">
+                </a>
+            </li>
+            <li class="projects__item swiper-slide">
+                <a class="partners-link" href="#">
+                  <img class="partners-link__img" src="img/projects-img-9.png" alt="projects-image-9">
+                </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-prev-projects">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
+            <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="none"/>
+            <path d="M16 20L11 15L16 10" stroke="black"/>
+            </svg>
+        </div>
+        <div class="swiper-button-next-projects">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="none"/>
+            <path d="M14 20L19 15L14 10" stroke="black"/>
+            </svg>
+        </div>
       </div>
     </section>
 

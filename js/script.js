@@ -113,7 +113,51 @@ var swiper2 = new Swiper ('.events-swiper', {
 
 const swiperNext = document.getElementById('.swiper-button-next-events')
 
-swiperNext.addEventListener('click', () => {
+swiper2Next.addEventListener('click', () => {
   swiper2.slideNext();
 })
 
+var swiper3 = new Swiper ('.projects-swiper', {
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+  loop: true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 38
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 27,
+    },
+    1660: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next-projects',
+    prevEl: '.swiper-button-prev-projects',
+  },
+
+})
+
+const swiper3Prev = document.getElementById('.swiper-button-prev-projects')
+
+swiperPrev.addEventListener('click', () => {
+  mySwiper.slidePrev();
+})
+
+const swiper3Next = document.getElementById('.swiper-button-next-projects')
+
+swiperNext.addEventListener('click', () => {
+  swiper2.slideNext();
+})
