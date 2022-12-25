@@ -697,122 +697,161 @@
 
     <section class="events">
       <div class="events__container container">
-        <h2 class="events__title">
+        <h2 class="events__title title">
           События
         </h2>
-        <ul class="events__list list-reset">
-          <li class="events__item">
-            <article class="events__article article">
-              <img src="img/events-image-1.jpg" alt="events-article-image-1">
-              <div class="events__wrapper">
-                <address>
-                  Музей им. Щусева
-                </address>
-                <time datetime="P10D">
-                  с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
-                </time>
-              </div>
-              <h3 class="events__subtitle">
-                Книжная гравюра в&nbsp;живом восприятии
-              </h3>
-              <p class="events__descr">
-                Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо
-              </p>
-              <button class="events__btn btn-reset">
-                Подробнее
-              </button>
-            </article>
-          </li>
-          <li class="events__item">
-            <article class="events__article">
-              <img src="img/events-image-2.jpg" alt="events-article-image-2">
-              <div class="events__wrapper">
-                <address>
-                  ММОМА
-                </address>
-                <time datetime="2022-03-24 19:00">
-                  24&nbsp;марта 19:00
-                </time>
-              </div>
-              <h3 class="events__subtitle">
-                &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.
-              </h3>
-              <p class="events__descr">
-                Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта
-              </p>
-              <button class="events__btn btn-reset">
-                Подробнее
-              </button>
-            </article>
-          </li>
-          <li class="events__item">
-            <article class="events__article">
-              <img src="img/events-image-3.jpg" alt="events-article-image-3">
-              <div class="events__wrapper">
-                <address>
-                  Еврейский музей
-                </address>
-                <time datetime="P20D">
-                  с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля
-                </time>
-              </div>
-              <h3 class="events__subtitle">
-                Выставка &laquo;Формация 2020&raquo;
-              </h3>
-              <p class="events__descr">
-                Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений
-              </p>
-              <button class="events__btn btn-reset">
-                Подробнее
-              </button>
-            </article>
-          </li>
-          <li class="events__item">
-            <article class="events__article">
-              <img src="img/events-image-4.jpg" alt="events-article-image-4">
-              <div class="events__wrapper">
-                <address>
-                  ММАМ
-                </address>
-                <time datetime="P42D">
-                  с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
-                </time>
-              </div>
-              <h3 class="events__subtitle">
-                Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;
-              </h3>
-              <p class="events__descr">
-                Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо
-              </p>
-              <button class="events__btn btn-reset">
-                Подробнее
-              </button>
-            </article>
-          </li>
-          <li class="events__item">
-            <article class="events__article">
-              <img src="img/events-image-5.jpg" alt="events-article-image-5">
-              <div class="events__wrapper">
-                <address>
-                  Третьяковка на&nbsp;Крымском валу
-                </address>
-                <time datetime="P30D">
-                  с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля
-                </time>
-              </div>
-              <h3 class="events__subtitle">
-                XXIV Международная биеннале молодого искусства
-              </h3>
-              <p class="events__descr">
-                Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
-              </p>
-              <button class="events__btn btn-reset">
-                Подробнее
-              </button>
-            </article>
-          </li>
-        </ul>
-
+        <div class="events-swiper swiper">
+          <ul class="events__list list-reset swiper-wrapper">
+            <li class="events__item swiper-slide">
+              <article class="events__article article-events flex">
+                <div class="article-events__wrapper">
+                  <img src="img/events-image-1.jpg" alt="events-article-image-1">
+                </div>
+                <div class="article-events__content flex">
+                  <div class="article-events__address-time">
+                    <address>
+                      Музей им. Щусева
+                    </address>
+                    <time datetime="P10D">
+                      с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
+                    </time>
+                  </div>
+                    <h3 class="article-events__subtitle">
+                      Книжная гравюра в&nbsp;живом восприятии
+                    </h3>
+                    <p class="article-events__descr desc">
+                      Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо
+                    </p>
+                  <div>
+                    <button class="article-events__btn btn-reset btn-more">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="events__item swiper-slide">
+              <article class="events__article article-events flex">
+                <div class="article-events__wrapper">
+                  <img src="img/events-image-2.jpg" alt="events-article-image-2">
+                </div>
+                <div class="article-events__content flex">
+                  <div class="article-events__address-time">
+                    <address>
+                      ММОМА
+                    </address>
+                    <time datetime="2022-03-24 19:00">
+                      24&nbsp;марта 19:00
+                    </time>
+                  </div>
+                  <h3 class="article-events__subtitle">
+                    &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.
+                  </h3>
+                  <p class="article-events__descr">
+                    Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта
+                  </p>
+                  <div>
+                    <button class="article-events__btn btn-reset btn-more">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="events__item swiper-slide">
+              <article class="events__article article-events flex">
+                <div class="article-events__wrapper">
+                  <img src="img/events-image-3.jpg" alt="events-article-image-3">
+                </div>
+                <div class="article-events__content flex">
+                  <div class="article-events__address-time">
+                    <address>
+                      Еврейский музей
+                    </address>
+                    <time datetime="P20D">
+                      с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля
+                    </time>
+                  </div>
+                  <h3 class="article-events__subtitle">
+                    Выставка &laquo;Формация 2020&raquo;
+                  </h3>
+                  <p class="article-events__descr">
+                    Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений
+                  </p>
+                  <div>
+                    <button class="article-events__btn btn-reset btn-more">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="events__item swiper-slide">
+              <article class="events__article article-events flex">
+                <div class="article-events__wrapper">
+                  <img src="img/events-image-4.jpg" alt="events-article-image-4">
+                </div>
+                <div class="article-events__content flex">
+                  <div class="article-events__address-time">
+                    <address>
+                      ММАМ
+                    </address>
+                    <time datetime="P42D">
+                      с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
+                    </time>
+                  </div>
+                  <h3 class="article-events__subtitle">
+                    Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;
+                  </h3>
+                  <p class="article-events__descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо
+                  </p>
+                  <div>
+                    <button class="article-events__btn btn-reset btn-more">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="events__item swiper-slide">
+              <article class="events__article article-events flex">
+                <div class="article-events__wrapper">
+                  <img src="img/events-image-5.jpg" alt="events-article-image-5">
+                </div>
+                <div class="article-events__content flex">
+                  <div class="article-events__address-time">
+                    <address>
+                      Третьяковка на&nbsp;Крымском валу
+                    </address>
+                    <time datetime="P30D">
+                      с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля
+                    </time>
+                  </div>
+                  <h3 class="article-events__subtitle">
+                    XXIV Международная биеннале молодого искусства
+                  </h3>
+                  <p class="article-events__descr">
+                    Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
+                  </p>
+                  <div>
+                    <button class="article-events__btn btn-reset btn-more">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="swiper-pagination-events"></div>
+        </div>
+        <div class="swiper-button-next-events">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" fill="#ECECEC"/>
+          <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" stroke="none"/>
+          <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"/>
+          </svg>
+        </div>
       </div>
     </section>
 
