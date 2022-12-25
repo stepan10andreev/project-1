@@ -867,6 +867,7 @@ img {
   z-index: 1;
 }
 
+
 /*events-pagination*/
 .events-swiper .swiper-pagination-events {
   display: none;
@@ -886,9 +887,88 @@ img {
 }
 
 .projects__descr{
+  width: 72%;
   margin: 0;
   margin-bottom: 30px;
 }
+
+/*tooltip*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.popup {
+  padding: 11px;
+  position: absolute;
+  top: -390%;
+  left: -835%;
+  width: 264px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: var(--background-violet-normal);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -35%;
+  border: 10px solid transparent;
+  border-top: 10px solid var(--background-violet-normal);
+}
+
+.popup-2 {
+  top: -489%;
+}
+
+.popup-3 {
+  top: -288%;
+}
+
+.popup-2::after {
+  bottom: -28%;
+}
+
+.popup-3::after {
+  bottom: -52%;
+}
+
+.tooltip__svg {
+  transition: fill 0.3s ease-in-out;
+}
+
+.tooltip__svg:focus,
+.tooltip__svg:hover  {
+  outline: none;
+  fill: #D1A9F0;
+}
+
+.tooltip__svg:focus + .popup,
+.tooltip__svg:hover + .popup {
+  opacity: 1;
+}
+
+.tooltip__svg:active {
+  fill: var(--background-violet-normal);
+}
+
+.tooltip__svg:active .tooltip__svg-path {
+  fill: var(--color-white);
+}
+
+
+
+
 
 .projects__subtitle {
   margin: 0;
@@ -906,6 +986,7 @@ img {
   max-width: 450px;
   min-height: 150px;
   border: 1px solid #CACACA;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .partners-link__img {
@@ -928,12 +1009,12 @@ img {
   border-color: var(--background-violet-normal);
 }
 
-/*prijects-swiper*/
+/*projects-swiper*/
 .projects__container {
   position: relative;
 }
 
-.projects__swiper {
+.projects-swiper {
   width: 1450px;
 }
 
@@ -943,6 +1024,7 @@ img {
   height: 30px;
   position: absolute;
   top: 80%;
+  cursor: pointer;
 }
 
 .swiper-button-prev-projects {
@@ -953,3 +1035,26 @@ img {
   right: 0;
 }
 
+/*swiper-btn-general: events+projects*/
+.swiper-btn-fill {
+  transition: fill 0.3s ease-in-out;
+}
+
+.swiper-btn-general:focus {
+  outline: none;
+}
+
+.swiper-btn-general:focus-visible .swiper-svg {
+  outline: 2px solid var(--background-violet-normal);
+  border-radius: 100px;
+}
+
+.swiper-btn-general:hover .swiper-btn-fill {
+  fill: #D1A9F0;
+}
+
+.swiper-btn-general:active .swiper-svg {
+  fill: #D1A9F0;
+  outline: 2px solid var(--background-violet-normal);
+  border-radius: 100px;
+}

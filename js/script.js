@@ -102,6 +102,7 @@ var swiper2 = new Swiper ('.events-swiper', {
 
   navigation: {
     nextEl: '.swiper-button-next-events',
+    prevEl: '.swiper-button-prev-events',
   },
 
   pagination: {
@@ -111,11 +112,14 @@ var swiper2 = new Swiper ('.events-swiper', {
   }
 })
 
-const swiperNext = document.getElementById('.swiper-button-next-events')
+const swiper2Next = document.querySelector('.swiper-button-next-events')
 
 swiper2Next.addEventListener('click', () => {
   swiper2.slideNext();
 })
+
+
+
 
 var swiper3 = new Swiper ('.projects-swiper', {
   slidesPerView: 3,
@@ -150,14 +154,14 @@ var swiper3 = new Swiper ('.projects-swiper', {
 
 })
 
-const swiper3Prev = document.getElementById('.swiper-button-prev-projects')
+const swiper3Prev = document.querySelector('.swiper-button-prev-projects')
 
-swiperPrev.addEventListener('click', () => {
-  mySwiper.slidePrev();
+swiper3Prev.addEventListener('click', () => {
+  swiper3.slidePrev();
 })
 
-const swiper3Next = document.getElementById('.swiper-button-next-projects')
+const swiper3Next = document.querySelector('.swiper-button-next-projects')
 
-swiperNext.addEventListener('click', () => {
-  swiper2.slideNext();
+swiper3Next.addEventListener('click', () => {
+  swiper3.slideNext();
 })
