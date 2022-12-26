@@ -980,13 +980,11 @@
 
         <div class="contacts__middle">
           <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="contacts__form contacts-form">
-            <div class="contacts-form__wrapper">
-              <input class="contacts-form__input" type="text"  required name="ФИО" placeholder="Имя*" data-validate-field="name" aria-label="Введите имя">
-              <input class="contacts-form__input"  type="tel"  required name="tel" placeholder="Телефон*" data-validate-field="email" aria-label="Введите телефон">
+              <input class="contacts-form__input input-name" type="text"  required name="ФИО" placeholder="Имя*" data-validate-field="name" aria-label="Введите имя">
+              <input class="contacts-form__input input-tel"  type="tel"  required name="tel" placeholder="Телефон*" data-validate-field="tel" aria-label="Введите телефон">
               <button class="contacts-form__btn btn-reset">
                 Заказать обратный звонок
               </button>
-            </div>
           </form>
         </div>
 
@@ -1045,7 +1043,8 @@
   </footer>
 
 
-
+  <script src="libs/just-validate.min.js"></script>
+  <script src="libs/inputmask.min.js"></script>
   <script src="libs/accordion.min.js"></script>
   <script src="libs/swiper-bundle.min.js"></script>
   <script src="libs/choices.min.js"></script>

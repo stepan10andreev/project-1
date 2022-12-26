@@ -6,6 +6,7 @@ const choices = new Choices(element, {
   position: 'bottom'
 })
 
+
 const swiper = new Swiper('.swiper', {
   slidesPerView: 3,
   slidesPerGroup: 3,
@@ -45,12 +46,14 @@ const swiper = new Swiper('.swiper', {
 })
 
 
+
 new Accordion('.accordion-list', {
 	elementClass: 'accordion',
 	triggerClass: 'accordion__control',
 	panelClass: 'accordion__content',
 	activeClass: 'accordion--active'
 })
+
 
 
 let tabsBtn = document.querySelectorAll('.tabs-nav__btn');
@@ -165,3 +168,42 @@ const swiper3Next = document.querySelector('.swiper-button-next-projects')
 swiper3Next.addEventListener('click', () => {
   swiper3.slideNext();
 })
+
+
+
+  var selector = document.querySelector("input[type='tel']");
+  var im = new Inputmask("+7(999) 999-99-99");
+  im.mask(selector);
+
+  new JustValidate('.contacts-form', {
+      rules: {
+          name: {
+              required: true,
+              minLength: 2,
+              maxLength: 10
+          },
+          tel: {
+              required: true,
+              function: (name, value) => {
+                  const phone = selector.inputmask.unmaskedvalue()
+                  console.log(phone)
+                  return Number(phone) && phone.length === 10
+              }
+          }
+      },
+      messages: {
+          name: {
+              required:"Вы не ввели имя",
+              minLength: "Поле должно содержать минимум 2 символа",
+              maxLength: "Поле должно содержать максимум 10 символов"
+          },
+          tel: {
+              required: "Вы не ввели телефон",
+              function: "Вы не ввели телефон"
+          }
+        }
+
+  })
+
+
+
