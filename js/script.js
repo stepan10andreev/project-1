@@ -233,3 +233,27 @@ swiper3Next.addEventListener('click', () => {
         myMap.geoObjects.add(myPlacemark);
     }
 
+
+    let menuLink = document.querySelectorAll('.menu__link');
+    let dropdownList = document.querySelectorAll('.dropdown__list');
+    let linkSvg = document.querySelectorAll('.menu-link__svg');
+
+
+    menuLink.forEach(function(link){
+      link.addEventListener('click', function(drop){
+        const path = drop.currentTarget.dataset.path;
+
+        menuLink.forEach(function(svg){ svg.classList.remove('btn--active')});
+        drop.currentTarget.classList.add('btn--active');
+
+        drop.currentTarget.addEventListener('click', function(dropTwo){
+          document.querySelector(`[data-target="${path}"]`).classList.toggle('dropdown__list--active');
+          dropTwo.currentTarget.classList.toggle('btn--active');
+        })
+
+        dropdownList.forEach(function(link){ link.classList.remove('dropdown__list--active')});
+        document.querySelector(`[data-target="${path}"]`).classList.add('dropdown__list--active');
+
+      })
+    })
+
