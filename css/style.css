@@ -1197,6 +1197,14 @@ img {
   left: 36%;
 }
 
+/*map*/
+.map__container  {
+  padding: 0;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale();
+}
 /*footer*/
 
 .footer {
