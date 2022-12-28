@@ -340,6 +340,19 @@ img {
   visibility: hidden;
 }
 
+
+.search-form-modal {
+  position: absolute;
+  right: 17px;
+  display: none;
+  width: 314px;
+  background: #000000;
+}
+
+.search-form--active {
+  display: block;
+}
+
 /*dropdown*/
 .dropdown__list {
   position: absolute;

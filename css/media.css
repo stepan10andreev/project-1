@@ -28,6 +28,7 @@
 
   .header__nav {
     position: absolute;
+    flex-direction: column;
     left: 0;
     top: 90px;
     min-width: 420px;
@@ -35,20 +36,40 @@
     z-index: 1000;
     padding: 50px 50px;
     box-shadow: 0px 50px 40px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 32px 32px;
-    background-color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.9);
     overflow-y: auto;
     visibility: hidden;
     transform: translateX(-120%);
     transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
+  .header__nav--active {
+    visibility: visible;
+    transform: none;
+    outline: none;
+  }
+
   .nav__list {
     flex-direction: column;
+    margin-bottom: 73px;
+  }
+
+  .nav__link {
+    font-size: 24px;
+    line-height: 64px;
   }
 
   .nav__link-enter {
-    display: block;
+    width: 70%;
+    padding: 19px 0 23px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: 2px solid #9D5CD0;
+    border-radius: 100px;
   }
 
   .burger {
@@ -74,10 +95,6 @@
     top: 0;
   }
 
-  .burger__line:nth-child(3) {
-    bottom: 0;
-    width: 24px;
-  }
 
   .burger__line:nth-child(2) {
     width: 28px;
@@ -85,32 +102,37 @@
     transform:translateY(-50%);
   }
 
-  .burger:focus {
-    outline-offset: 5px;
-    outline: 2px solid #FF9900;
+  .burger__line:nth-child(3) {
+    bottom: 0;
+    width: 24px;
   }
 
-  .burger:active {
-    outline: none
+  .burger:focus-visible {
+    outline-offset: 5px;
+    outline: 2px solid var(--color-violet-text);
   }
 
   .burger--active .burger__line:nth-child(2) {
-    width: 25px;
-    left: 5px;
-    background-color: #E1670E;
-    transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out, left 0.3s ease-in-out;
+    opacity: 0;
   }
 
   .burger--active .burger__line:first-child {
-    background: #E1670E;
-    transition: background-color 0.3s ease-in-out;
+    width: 36px;
+    left: 0;
+    top: 50%;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
   }
 
   .burger--active .burger__line:last-child {
-    width: 18px;
-    left: 12px;
-    background-color: #E1670E;
-    transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out, left 0.3s ease-in-out;
+    width: 36px;
+    bottom: auto;
+    left: 0;
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
   }
 
   .header__btn-search {

@@ -290,3 +290,20 @@ burger.addEventListener('click',
 
     document.body.classList.toggle('stop-scroll');
 })
+
+
+let searchBtn = document.querySelector('.header__btn-search');
+let searchForm = document.querySelector('.search-form-modal');
+let canselBtn = document.querySelector('.search-form-modal__cansel')
+
+searchBtn.addEventListener('click',
+
+function() {
+  searchForm.classList.add('search-form--active');
+})
+
+
+canselBtn.addEventListener('click',
+function(){
+  searchForm.classList.remove('search-form--active')
+})
