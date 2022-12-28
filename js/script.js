@@ -27,7 +27,13 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 2,
       spaceBetween: 34
     },
-    1660: {
+
+    1301: {
+      slidesPerView: 2,
+      spaceBetween: 50
+    },
+
+    1561: {
       slidesPerView: 3,
       spaceBetween: 50
     }
@@ -90,12 +96,7 @@ var swiper2 = new Swiper ('.events-swiper', {
     // when window width is >= 640px
     1024: {
       slidesPerView: 3,
-      spaceBetween: 27,
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-      }
+      spaceBetween: 27
     },
     1660: {
       slidesPerView: 3,
@@ -127,7 +128,7 @@ swiper2Next.addEventListener('click', () => {
 var swiper3 = new Swiper ('.projects-swiper', {
   slidesPerView: 3,
   slidesPerGroup: 3,
-  spaceBetween: 50,
+
   loop: true,
   breakpoints: {
     // when window width is >= 320px
@@ -141,10 +142,11 @@ var swiper3 = new Swiper ('.projects-swiper', {
     },
     // when window width is >= 640px
     1024: {
-      slidesPerView: 3,
-      spaceBetween: 27,
+      slidesPerView: 2,
+      spaceBetween: 50,
     },
-    1660: {
+
+    1600: {
       slidesPerView: 3,
       spaceBetween: 50
     }
@@ -272,3 +274,19 @@ swiper3Next.addEventListener('click', () => {
       modal.classList.toggle("closed");
       modalOverlay.classList.toggle("closed");
     });
+
+
+let burger = document.querySelector('.burger');
+let menu = document.querySelector('.header__nav');
+let menuLinks = menu.querySelectorAll('.nav__link');
+
+
+burger.addEventListener('click',
+
+  function() {
+    burger.classList.toggle('burger--active');
+
+    menu.classList.toggle('header__nav--active');
+
+    document.body.classList.toggle('stop-scroll');
+})
