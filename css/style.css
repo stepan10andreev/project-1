@@ -1022,7 +1022,7 @@ img {
 }
 
 .accordion__btn {
-  padding: 32px 0;
+  padding: 31px 0;
   width: 100%;
   align-items: center;
   border-top: 0.5px solid #CACACA;
@@ -1042,9 +1042,7 @@ img {
 
 .accordion__painter-list {
   padding: 25px 0;
-  padding-right: 85px;
   columns: auto 3;
-  column-gap: 60px;
 }
 
 .accordion__painter-list hr {
@@ -1207,7 +1205,7 @@ img {
 
 .events__title {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .article-events {

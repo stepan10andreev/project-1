@@ -20,27 +20,23 @@ const swiper = new Swiper('.swiper', {
     },
     661: {
       slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
     },
-    // when window width is >= 480px
     768: {
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 38
     },
 
-    // when window width is >= 640px
-   /* 800: {
-      slidesPerView: 3,
-    },*/
-
     993: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
       spaceBetween: 34
     },
 
     1361: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
       spaceBetween: 50
     },
 
@@ -101,15 +97,15 @@ var swiper2 = new Swiper ('.events-swiper', {
       slidesPerGroup: 1
     },
 
-    // when window width is >= 480px
     761: {
       slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
       spaceBetween: 38
     },
-    // when window width is >= 640px
+
     1024: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 27
     },
     1660: {
@@ -142,7 +138,6 @@ swiper2Next.addEventListener('click', () => {
 var swiper3 = new Swiper ('.projects-swiper', {
   slidesPerView: 3,
   slidesPerGroup: 3,
-
   loop: true,
   breakpoints: {
     // when window width is >= 320px
@@ -156,12 +151,12 @@ var swiper3 = new Swiper ('.projects-swiper', {
       slidesPerGroup: 2,
       spaceBetween: 10
     },
-    // when window width is >= 480px
     768: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
       spaceBetween: 34
     },
-    // when window width is >= 640px
+
     1024: {
       slidesPerView: 2,
       spaceBetween: 50,
