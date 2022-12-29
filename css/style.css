@@ -994,7 +994,7 @@ img {
 }
 
 .accordion__painter-item {
-  margin-right: 2px;
+  margin-right: 0;
 }
 
 .article-painter__descr {
@@ -1506,6 +1506,8 @@ img {
   max-width: 1920px;
   padding: 34px 158px;
   justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
   align-items: center;
   border: 1px solid #CACACA;
 }
