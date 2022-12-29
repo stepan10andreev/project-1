@@ -14,16 +14,27 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   breakpoints: {
     // when window width is >= 320px
-    320: {
-      slidesPerView: 1
+    0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1
+    },
+    661: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     // when window width is >= 480px
     768: {
       slidesPerView: 2,
+      slidesPerGroup: 1,
       spaceBetween: 38
     },
+
     // when window width is >= 640px
-    1024: {
+    800: {
+      slidesPerView: 3,
+    },
+
+    993: {
       slidesPerView: 2,
       spaceBetween: 34
     },
@@ -85,12 +96,15 @@ var swiper2 = new Swiper ('.events-swiper', {
   loop: true,
   breakpoints: {
     // when window width is >= 320px
-    320: {
-      slidesPerView: 1
+    0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1
     },
+
     // when window width is >= 480px
-    768: {
+    761: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
       spaceBetween: 38
     },
     // when window width is >= 640px
@@ -132,13 +146,20 @@ var swiper3 = new Swiper ('.projects-swiper', {
   loop: true,
   breakpoints: {
     // when window width is >= 320px
-    320: {
-      slidesPerView: 1
+    0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1
+    },
+
+    395: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 10
     },
     // when window width is >= 480px
     768: {
       slidesPerView: 2,
-      spaceBetween: 38
+      spaceBetween: 34
     },
     // when window width is >= 640px
     1024: {
