@@ -918,6 +918,13 @@ img {
   border-radius: 100px;
 }
 
+
+.gallery__image:focus-visible {
+  outline: 3px solid #7943A4;
+}
+
+
+
 /*catalog*/
 .catalog {
   background: var(--color-white);
@@ -1213,7 +1220,14 @@ img {
   max-width: 500px;
   min-height: 700px;
   border: 1px solid #CACACA;
+  transition: border-color 0.3s ease-in-out;
 }
+
+.article-events:focus {
+  outline: none;
+  border-color: var(--background-violet-dark);
+}
+
 
 .article-events__img {
   width: 100%;
@@ -1800,6 +1814,12 @@ img {
   transition: opacity 0.3s ease-in-out;
 }
 
+.modal-btn-open:focus-visible,
+.modal-btn-open:focus-visible::after {
+  outline: none;
+  opacity: 1;
+}
+
 .modal-btn-open:hover,
 .modal-btn-open:hover::after {
   opacity: 1;
@@ -1808,3 +1828,4 @@ img {
 .closed {
   display: none;
 }
+
