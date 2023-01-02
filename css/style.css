@@ -924,7 +924,6 @@ img {
 }
 
 
-
 /*catalog*/
 .catalog {
   background: var(--color-white);
@@ -1825,7 +1824,14 @@ img {
   opacity: 1;
 }
 
+.modal-btn-open:active::after {
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  box-shadow: 0px 5px 10px 20px rgba(194, 131, 243, 0.4);
+}
+
 .closed {
   display: none;
 }
+
+
 
