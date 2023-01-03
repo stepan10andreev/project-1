@@ -139,11 +139,13 @@ var swiper3 = new Swiper ('.projects-swiper', {
   slidesPerView: 3,
   slidesPerGroup: 3,
   loop: true,
+  allowTouchMove: true,
   breakpoints: {
     // when window width is >= 320px
     0: {
       slidesPerView: 1,
-      slidesPerGroup: 1
+      slidesPerGroup: 1,
+      spaceBetween: 50
     },
 
     395: {
@@ -324,6 +326,16 @@ burger.addEventListener('click',
     menu.classList.toggle('header__nav--active');
 
     document.body.classList.toggle('stop-scroll');
+})
+
+menuLinks.forEach(function(el){
+  el.addEventListener('click', function() {
+    burger.classList.remove('burger--active');
+
+    menu.classList.remove('header__nav--active');
+
+    document.body.classList.remove('stop-scroll');
+  })
 })
 
 
