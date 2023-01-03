@@ -219,6 +219,25 @@ swiper3Next.addEventListener('click', () => {
               required: "Вы не ввели телефон",
               function: "Вы не ввели телефон"
           }
+      },
+
+        submitHandler: function(thisForm) {
+          let formData = new FormData(thisForm);
+
+          let xhr = new XMLHttpRequest();
+
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+              if (xhr.status === 200) {
+                console.log('Отправлено');
+              }
+            }
+          }
+
+          xhr.open('POST', 'mail.php', true);
+          xhr.send(formData);
+
+          thisForm.reset();
         }
 
   })
@@ -323,3 +342,25 @@ canselBtn.addEventListener('click',
 function(){
   searchForm.classList.remove('search-form--active')
 })
+
+
+var catalogArticle = document.querySelectorAll(".catalog__article");
+var btnPainter = document.querySelectorAll('.tabs-nav__btn');
+
+btnPainter.forEach(function (handleButtonClick) {
+  handleButtonClick.addEventListener('click', function(){
+    catalogArticle.forEach(function(scroll){
+      scroll.scrollIntoView({block: "start", behavior: "smooth"});
+    })
+  })
+})
+
+//2 Вариант
+// var tabsContent = document.querySelector(".tabs-content");
+// var btnPainter = document.querySelectorAll('.tabs-nav__btn');
+
+// btnPainter.forEach(function (handleButtonClick) {
+//   handleButtonClick.addEventListener('click', function(){
+//     tabsContent.scrollIntoView({block: "center", behavior: "smooth"});
+//     })
+// })

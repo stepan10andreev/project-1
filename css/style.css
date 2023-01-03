@@ -1549,7 +1549,7 @@ img {
 .contacts-form__input {
   width: 270px;
   max-width: 100%;
-  padding: 9px 43px 9px 24px;
+  padding: 16px 24px 16px 24px;
   border: 1px solid var(--color-text);
   border-radius: 100px;
   cursor: pointer;
@@ -1620,24 +1620,16 @@ img {
 .contacts-form {
   position: relative;
   display: flex;
-  gap: 25px;
+  gap: 19px;
 }
 
  .js-validate-error-label {
-  position: absolute;
   color: #be2e2e;
 }
 
-.input-name + .js-validate-error-label{
-  width: 25%;
-  top: 100%;
-  left: 3%;
-}
-
-
-.input-tel + .js-validate-error-label{
-  top: 100%;
-  left: 36%;
+.contacts-form__label {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 /*map*/

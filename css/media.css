@@ -670,6 +670,20 @@
   }
 }
 
+/* @media (max-width: 765px) {
+
+    .input-name + .js-validate-error-label {
+      width: 100%;
+      top: -10%;
+      left: 3%;
+    }
+
+    .input-tel + .js-validate-error-label {
+      top: 29%;
+      left: 4%;
+  }
+} */
+
 @media (max-width: 660px) {
   .hero__title {
     margin-bottom: 2px;

@@ -1199,9 +1199,13 @@
         </div>
 
         <div class="contacts__middle">
-          <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="contacts__form contacts-form" aria-label="Форма обратной связи">
+          <form action="#" method="POST" enctype="multipart/form-data" class="contacts__form contacts-form" aria-label="Форма обратной связи">
+            <label class="contacts-form__label">
               <input class="contacts-form__input input-name" type="text"  required name="ФИО" placeholder="Имя*" data-validate-field="name" aria-label="Введите имя">
+            </label>
+            <label class="contacts-form__label">
               <input class="contacts-form__input input-tel"  type="tel"  required name="tel" placeholder="Телефон*" data-validate-field="tel" aria-label="Введите телефон">
+            </label>
               <button class="contacts-form__btn btn-reset">
                 Заказать <span class="contacts-form__btn-text" >обратный звонок</span>
               </button>
