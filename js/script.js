@@ -2,6 +2,7 @@ const element = document.querySelector('.gallery__select');
 const choices = new Choices(element, {
   searchEnabled: false,
   itemSelectText: '',
+  allowHTML: true,
 	shouldSort: false,
   position: 'bottom'
 })
@@ -246,31 +247,6 @@ swiper3Next.addEventListener('click', () => {
 
 
 
-    // Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
-    function init(){
-        // Создание карты.
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [55.75846806898367,37.60108849999989],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 15
-        });
-        // Создание геообъекта с типом точка (метка).
-        var myPlacemark = new ymaps.Placemark([55.75846806898367,37.60108849999989], {}, {
-          iconLayout: 'default#image',
-          iconImageHref: '/img/map-icon.svg',
-          iconImageSize: [20, 20],
-          iconImageOffset: [-3, -42]
-        });
-        // Размещение геообъекта на карте.
-        myMap.geoObjects.add(myPlacemark);
-    }
 
 
     let menuLink = document.querySelectorAll('.menu__link');
@@ -376,3 +352,4 @@ btnPainter.forEach(function (handleButtonClick) {
 //     tabsContent.scrollIntoView({block: "center", behavior: "smooth"});
 //     })
 // })
+

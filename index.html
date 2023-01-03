@@ -1306,6 +1306,34 @@
   </div>
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+
+  <script type="text/javascript">
+  // Функция ymaps.ready() будет вызвана, когда
+  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+  ymaps.ready(init);
+  function init(){
+      // Создание карты.
+      var myMap = new ymaps.Map("map", {
+          // Координаты центра карты.
+          // Порядок по умолчанию: «широта, долгота».
+          // Чтобы не определять координаты центра карты вручную,
+          // воспользуйтесь инструментом Определение координат.
+          center: [55.75846806898367,37.60108849999989],
+          // Уровень масштабирования. Допустимые значения:
+          // от 0 (весь мир) до 19.
+          zoom: 15
+      });
+      // Создание геообъекта с типом точка (метка).
+      var myPlacemark = new ymaps.Placemark([55.75846806898367,37.60108849999989], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: '/img/map-icon.svg',
+        iconImageSize: [20, 20],
+        iconImageOffset: [-3, -42]
+      });
+      // Размещение геообъекта на карте.
+      myMap.geoObjects.add(myPlacemark);
+  }
+  </script>
   <script src="libs/just-validate.min.js"></script>
   <script src="libs/inputmask.min.js"></script>
   <script src="libs/accordion.min.js"></script>
