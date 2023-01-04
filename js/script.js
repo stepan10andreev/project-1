@@ -343,13 +343,4 @@ btnPainter.forEach(function (handleButtonClick) {
   })
 })
 
-//2 Вариант
-// var tabsContent = document.querySelector(".tabs-content");
-// var btnPainter = document.querySelectorAll('.tabs-nav__btn');
-
-// btnPainter.forEach(function (handleButtonClick) {
-//   handleButtonClick.addEventListener('click', function(){
-//     tabsContent.scrollIntoView({block: "center", behavior: "smooth"});
-//     })
-// })
 
