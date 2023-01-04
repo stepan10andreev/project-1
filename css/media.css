@@ -872,6 +872,11 @@
     }
   }
 
+  .hero__bg-container {
+    margin-top: -280px;
+    min-height: 440px;
+  }
+
   /*about*/
 
   .about {
