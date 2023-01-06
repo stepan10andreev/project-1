@@ -80,7 +80,7 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
             </svg>
         </button>
-        <form action="" class="search-form-modal" id="search-form" aria-label="Форма поиска">
+        <form class="search-form-modal" id="search-form" aria-label="Форма поиска">
           <button class="search-form-modal__btn btn-reset" id="search-btn" type="submit" aria-label="Поиск">
             <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
@@ -142,7 +142,7 @@
               </ul>
             </li>
             <li class="menu__item">
-              <button href="#" class="menu__link menu-link flex btn-reset" data-path="two">
+              <button class="menu__link menu-link flex btn-reset" data-path="two">
                 Импрессионизм
                 <svg class="menu-link__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="menu-link__stroke" d="M11 1L6 6L1 1" stroke="white"/>
@@ -172,7 +172,7 @@
               </ul>
             </li>
             <li class="menu__item">
-              <button href="#" class="menu__link menu-link flex btn-reset" data-path="three">
+              <button class="menu__link menu-link flex btn-reset" data-path="three">
                 Постимпрессионизм
                 <svg class="menu-link__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="menu-link__stroke" d="M11 1L6 6L1 1" stroke="white"/>
@@ -202,7 +202,7 @@
               </ul>
             </li>
             <li class="menu__item">
-              <button href="#" class="menu__link menu-link flex btn-reset" data-path="four">
+              <button class="menu__link menu-link flex btn-reset" data-path="four">
                 Авангард
                 <svg class="menu-link__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="menu-link__stroke" d="M11 1L6 6L1 1" stroke="white"/>
@@ -232,7 +232,7 @@
               </ul>
             </li>
             <li class="menu__item">
-              <button href="#" class="menu__link menu-link flex btn-reset" data-path="five">
+              <button class="menu__link menu-link flex btn-reset" data-path="five">
                 Футуризм
                 <svg class="menu-link__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="menu-link__stroke" d="M11 1L6 6L1 1" stroke="white"/>
@@ -263,7 +263,7 @@
             </li>
           </ul>
         </nav>
-        <form action="" aria-label="Форма поиска" class="header__form search-form">
+        <form aria-label="Форма поиска" class="header__form search-form">
           <button type="submit" class="search-form__btn btn-reset" aria-label="Поиска">
             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
@@ -318,8 +318,7 @@
           <p class="gallery__subtitle">
             Фильтр:
           </p>
-
-          <form action="" class="gallery__form" aria-label="Форма фильтр">
+          <form class="gallery__form" aria-label="Форма фильтр">
             <select name="gallery-select" class="gallery__select">
               <option value="Живопись">Живопись</option>
               <option value="">Выбор 1</option>
@@ -345,7 +344,7 @@
           </form>
         </div>
         <div class="gallery__swiper swiper">
-          <div aria-label="Кнопка предыдущий слайд" class="gallery__swiper-button swiper-button-prev">
+          <div class="gallery__swiper-button swiper-button-prev">
             <svg class="swiper-button-svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="swiper-button-fill" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666"/>
               <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="none"/>
@@ -561,7 +560,7 @@
             <ul class="accordion-list catalog__list list-reset" aria-label="Аккордеон">
               <li class="accordion-list__item accordion">
                 <button class="accordion__btn btn-reset accordion__control flex">
-                  <div class="accordion__btn-name">C&nbsp;1400 по&nbsp;1499&nbsp;гг</div>
+                  <span class="accordion__btn-name">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -614,8 +613,8 @@
                       <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Бьяджо д&rsquo;Антонио Туччи">
                         Бьяджо д&rsquo;Антонио Туччи
                       </button>
+                      <hr>
                     </li>
-                    <hr>
                     <li class="accordion__painter-item tabs-nav__item">
                       <button class="tabs-nav__btn btn-reset" data-path="empty" aria-label="Веккьетта">
                         Веккьетта
@@ -699,7 +698,7 @@
 
               <li class="accordion-list__item accordion">
                 <button class="accordion__btn btn-reset accordion__control flex">
-                  <div class="accordion__btn-name">C&nbsp;1500 по&nbsp;1599&nbsp;гг</div>
+                  <span class="accordion__btn-name">C&nbsp;1500 по&nbsp;1599&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -732,7 +731,7 @@
 
               <li class="accordion-list__item accordion">
                 <button class="accordion__btn btn-reset accordion__control flex">
-                  <div class="accordion__btn-name">C&nbsp;1600 по&nbsp;1699&nbsp;гг</div>
+                  <span class="accordion__btn-name">C&nbsp;1600 по&nbsp;1699&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -763,7 +762,7 @@
 
               <li class="accordion-list__item accordion">
                 <button class="accordion__btn btn-reset accordion__control flex">
-                  <div class="accordion__btn-name">C&nbsp;1700 по&nbsp;1799&nbsp;гг</div>
+                  <span class="accordion__btn-name">C&nbsp;1700 по&nbsp;1799&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -794,7 +793,7 @@
 
               <li class="accordion-list__item accordion">
                 <button class="accordion__btn btn-reset accordion__control flex">
-                  <div class="accordion__btn-name">C&nbsp;1800 по&nbsp;1899&nbsp;гг</div>
+                  <span class="accordion__btn-name">C&nbsp;1800 по&nbsp;1899&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -825,7 +824,7 @@
 
               <li class="accordion-list__item accordion">
                 <button class="accordion__btn btn-reset accordion__control flex">
-                  <div class="accordion__btn-name">C&nbsp;1900 по&nbsp;1999&nbsp;гг</div>
+                  <span class="accordion__btn-name">C&nbsp;1900 по&nbsp;1999&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -856,7 +855,7 @@
 
               <li class="accordion-list__item accordion">
                 <button class="accordion__btn btn-reset accordion__control flex">
-                  <div class="accordion__btn-name">C&nbsp;2000&nbsp;г</div>
+                  <span class="accordion__btn-name">C&nbsp;2000&nbsp;г</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -1242,7 +1241,7 @@
       </div>
 
       <div class="map__container container">
-        <div aria-label="Карта" class="map" id="map"></div>
+        <div class="map" id="map"></div>
       </div>
 
 
@@ -1306,7 +1305,6 @@
   </div>
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-
   <script type="text/javascript">
   // Функция ymaps.ready() будет вызвана, когда
   // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
