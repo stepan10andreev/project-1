@@ -394,7 +394,7 @@
 
   /*map*/
 
-  .map__container {
+  .map-container {
     padding: 0;
   }
 
@@ -584,7 +584,7 @@
     padding: 32px 50px;
   }
 
-  .search-form__input{
+  .search-form-input{
     width: 90%;
   }
 }
@@ -1007,7 +1007,7 @@
     padding: 20px 0;
   }
 
-  .accordion__btn-name {
+  .accordion-btn__name {
     font-weight: 600;
     font-size: 18px;
     line-height: 32px;

@@ -87,7 +87,7 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
               </svg>
           </button>
-          <input class="search-form__input" type="text">
+          <input class="search-form-modal__input search-form-input" type="text">
           <button class="search-form-modal__cansel btn-reset" id="search-cansel" type="submit" aria-label="Выйти из формы поиска">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)" fill="white"/>
@@ -141,7 +141,7 @@
                 </li>
               </ul>
             </li>
-            <li class="menu__item">
+            <li class="menu__item dropdown">
               <button class="menu__link menu-link flex btn-reset" data-path="two">
                 Импрессионизм
                 <svg class="menu-link__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +171,7 @@
                 </li>
               </ul>
             </li>
-            <li class="menu__item">
+            <li class="menu__item dropdown">
               <button class="menu__link menu-link flex btn-reset" data-path="three">
                 Постимпрессионизм
                 <svg class="menu-link__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +201,7 @@
                 </li>
               </ul>
             </li>
-            <li class="menu__item">
+            <li class="menu__item dropdown">
               <button class="menu__link menu-link flex btn-reset" data-path="four">
                 Авангард
                 <svg class="menu-link__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +231,7 @@
                 </li>
               </ul>
             </li>
-            <li class="menu__item">
+            <li class="menu__item dropdown">
               <button class="menu__link menu-link flex btn-reset" data-path="five">
                 Футуризм
                 <svg class="menu-link__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -270,7 +270,7 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z" fill="white"/>
               </svg>
           </button>
-          <input type="text" placeholder="Поиск по&nbsp;сайту" class="search-form__input">
+          <input type="text" placeholder="Поиск по&nbsp;сайту" class="search-form-input">
         </form>
       </div>
     </div>
@@ -451,7 +451,7 @@
                   <img class="article-painter__image" src="img/catalog-image-Ghirlandaio.jpg" srcset="img/catalog-image-Ghirlandaio.jpg" alt="художник Доменико Гирландайо">
                 </picture>
               </div>
-              <div class="artcile-painter__descr-wrapper flex">
+              <div class="article-painter__descr-wrapper flex">
                 <h3 class="article-painter__name subtitle-general">
                   Доменико Гирландайо
                 </h3>
@@ -473,7 +473,7 @@
                   <img class="article-painter__image" src="img/catalog-image-Benedetto.jpg" srcset="img/catalog-image-Benedetto.jpg" alt="Бенедетто ди Биндо">
                 </picture>
               </div>
-              <div class="artcile-painter__descr-wrapper flex">
+              <div class="article-painter__descr-wrapper flex">
                 <h3 class="article-painter__name subtitle-general">
                   Бенедетто ди&nbsp;Биндо
                 </h3>
@@ -495,7 +495,7 @@
                   <img class="article-painter__image" src="img/catalog-image-Bergognone.jpg" srcset="img/catalog-image-Bergognone.jpg" alt="Бергоньоне, Амброджо">
                 </picture>
               </div>
-              <div class="artcile-painter__descr-wrapper flex">
+              <div class="article-painter__descr-wrapper flex">
                 <h3 class="article-painter__name subtitle-general">
                   Бергоньоне, Амброджо
                 </h3>
@@ -517,7 +517,7 @@
                   <img class="article-painter__image" src="img/catalog-image-Bissolo.jpg" srcset="img/catalog-image-Bissolo.jpg" alt="Биссоло, Франческо">
                 </picture>
               </div>
-              <div class="artcile-painter__descr-wrapper flex">
+              <div class="article-painter__descr-wrapper flex">
                 <h3 class="article-painter__name subtitle-general">
                   Биссоло, Франческо
                 </h3>
@@ -538,10 +538,10 @@
                   <source srcset="img/catalog-anonim-320.jpg" media="(max-width: 630px)">
                   <source srcset="img/catalog-anonim-768.jpg" media="(max-width: 992px)">
                   <source srcset="img/catalog-anonim-1024.jpg" media="(max-width: 1024px)">
-                  <img class="article-painter__image" src="img/catalog-anonim.jpg" srcset="img/catalog-anonim.jpg" alt="Пустая картинка">
+                  <img class="article-empty__image" src="img/catalog-anonim.jpg" srcset="img/catalog-anonim.jpg" alt="Пустая картинка">
                 </picture>
               </div>
-              <div class="artcile-empty__descr-wrapper flex">
+              <div class="article-empty__descr-wrapper flex">
                 <h3 class="article-empty__heading subtitle-general">
                   Что мы&nbsp;о&nbsp;нём знаем?
                 </h3>
@@ -559,8 +559,8 @@
           <div class="catalog__accordion-block">
             <ul class="accordion-list catalog__list list-reset" aria-label="Аккордеон">
               <li class="accordion-list__item accordion">
-                <button class="accordion__btn btn-reset accordion__control flex">
-                  <span class="accordion__btn-name">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
+                <button class="accordion__btn accordion-btn btn-reset accordion__control flex">
+                  <span class="accordion-btn__name">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -697,8 +697,8 @@
               </li>
 
               <li class="accordion-list__item accordion">
-                <button class="accordion__btn btn-reset accordion__control flex">
-                  <span class="accordion__btn-name">C&nbsp;1500 по&nbsp;1599&nbsp;гг</span>
+                <button class="accordion__btn accordion-btn btn-reset accordion__control flex">
+                  <span class="accordion-btn__name">C&nbsp;1500 по&nbsp;1599&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -730,8 +730,8 @@
               </li>
 
               <li class="accordion-list__item accordion">
-                <button class="accordion__btn btn-reset accordion__control flex">
-                  <span class="accordion__btn-name">C&nbsp;1600 по&nbsp;1699&nbsp;гг</span>
+                <button class="accordion__btn accordion-btn btn-reset accordion__control flex">
+                  <span class="accordion-btn__name">C&nbsp;1600 по&nbsp;1699&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -761,8 +761,8 @@
               </li>
 
               <li class="accordion-list__item accordion">
-                <button class="accordion__btn btn-reset accordion__control flex">
-                  <span class="accordion__btn-name">C&nbsp;1700 по&nbsp;1799&nbsp;гг</span>
+                <button class="accordion__btn accordion-btn btn-reset accordion__control flex">
+                  <span class="accordion-btn__name">C&nbsp;1700 по&nbsp;1799&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -792,8 +792,8 @@
               </li>
 
               <li class="accordion-list__item accordion">
-                <button class="accordion__btn btn-reset accordion__control flex">
-                  <span class="accordion__btn-name">C&nbsp;1800 по&nbsp;1899&nbsp;гг</span>
+                <button class="accordion__btn accordion-btn btn-reset accordion__control flex">
+                  <span class="accordion-btn__name">C&nbsp;1800 по&nbsp;1899&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -823,8 +823,8 @@
               </li>
 
               <li class="accordion-list__item accordion">
-                <button class="accordion__btn btn-reset accordion__control flex">
-                  <span class="accordion__btn-name">C&nbsp;1900 по&nbsp;1999&nbsp;гг</span>
+                <button class="accordion__btn accordion-btn btn-reset accordion__control flex">
+                  <span class="accordion-btn__name">C&nbsp;1900 по&nbsp;1999&nbsp;гг</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -854,8 +854,8 @@
               </li>
 
               <li class="accordion-list__item accordion">
-                <button class="accordion__btn btn-reset accordion__control flex">
-                  <span class="accordion__btn-name">C&nbsp;2000&nbsp;г</span>
+                <button class="accordion__btn accordion-btn btn-reset accordion__control flex">
+                  <span class="accordion-btn__name">C&nbsp;2000&nbsp;г</span>
                   <svg class="accordion-btn__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="accordion-btn__fill" d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
                   <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="none"/>
@@ -1240,7 +1240,7 @@
         </div>
       </div>
 
-      <div class="map__container container">
+      <div class="map-container container">
         <div class="map" id="map"></div>
       </div>
 
