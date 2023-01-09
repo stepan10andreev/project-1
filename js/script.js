@@ -70,6 +70,8 @@ new Accordion('.accordion-list', {
 
 
 
+
+
 let tabsBtn = document.querySelectorAll('.tabs-nav__btn');
 let tabsItem = document.querySelectorAll('.tabs-item');
 
@@ -117,7 +119,7 @@ var swiper2 = new Swiper ('.events-swiper', {
 
   navigation: {
     nextEl: '.swiper-button-next-events',
-    prevEl: '.swiper-button-prev-events',
+    prevEl: '.swiper-button-prev-events'
   },
 
   pagination: {
@@ -127,11 +129,11 @@ var swiper2 = new Swiper ('.events-swiper', {
   }
 });
 
-const swiper2Next = document.querySelector('.swiper-button-next-events')
+// const swiper2Next = document.querySelector('.swiper-button-next-events')
 
-swiper2Next.addEventListener('click', () => {
-  swiper2.slideNext();
-});
+// swiper2Next.addEventListener('click', () => {
+//   swiper2.slideNext();
+// });
 
 
 var swiper3 = new Swiper ('.projects-swiper', {

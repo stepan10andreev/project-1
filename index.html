@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body class="page">
+  <h1 class="visually-hidden">Blanchard - художественная галерея</h1>
   <header class="header">
     <div class="header__top">
       <div class="header__container container flex">
@@ -169,6 +170,16 @@
                     Ренуар
                   </a>
                 </li>
+                <li class="dropdown__item dropdown__item--renoir">
+                  <a class="dropdown__link" href="">
+                    Ренуар
+                  </a>
+                </li>
+                <li class="dropdown__item dropdown__item--renoir">
+                  <a class="dropdown__link" href="">
+                    Ренуар
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="menu__item dropdown">
@@ -280,17 +291,15 @@
     <section class="hero">
       <div class="hero__container container">
         <div class="hero__content flex">
-          <h1 class="hero__title">
+          <h3 class="hero__title">
             Прикоснитесь к&nbsp;прекрасному
-          </h1>
+          </h3>
           <p class="hero__descr">
             Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для&nbsp;новых предложений
           </p>
-          <div>
             <a href="#map" class="hero__btn btn-reset btn">
               Подписаться на&nbsp;рассылку
             </a>
-          </div>
         </div>
         <div class="hero__bg-container">
           <div class="hero__slide hero__slide--image1"></div>
@@ -321,22 +330,22 @@
           <form class="gallery__form" aria-label="Форма фильтр">
             <select name="gallery-select" class="gallery__select">
               <option value="Живопись">Живопись</option>
-              <option value="">Выбор 1</option>
-              <option value="">Выбор 2</option>
+              <option value="">Рисунок</option>
+              <option value="">Скульптура</option>
             </select>
             <div class="gallery__checkbox-wrapper flex">
-              <label class="gallery__label" tabindex="0">
-                <input class="gallery__checkbox" type="checkbox">
+              <label class="gallery__label">
+                <input class="gallery__checkbox visually-hidden" type="checkbox">
                 <span class="gallery__checkbox-fake"></span>
                 <span class="gallery__checkbox-text">XIX век</span>
               </label>
-              <label class="gallery__label" tabindex="0">
-                <input class="gallery__checkbox" type="checkbox" checked>
+              <label class="gallery__label">
+                <input class="gallery__checkbox visually-hidden" type="checkbox" checked>
                 <span class="gallery__checkbox-fake"></span>
                 <span class="gallery__checkbox-text">XX&nbsp;век</span>
               </label>
-              <label class="gallery__label" tabindex="0">
-                <input class="gallery__checkbox" type="checkbox">
+              <label class="gallery__label">
+                <input class="gallery__checkbox visually-hidden" type="checkbox">
                 <span class="gallery__checkbox-fake"></span>
                 <span class="gallery__checkbox-text">Современность</span>
               </label>
@@ -921,11 +930,9 @@
                     <p class="article-events__descr desc">
                       Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо
                     </p>
-                  <div>
                     <a href="#" class="article-events__link link-more">
                       Подробнее
                     </a>
-                  </div>
                 </div>
               </article>
             </li>
@@ -954,11 +961,9 @@
                   <p class="article-events__descr desc">
                     Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта
                   </p>
-                  <div>
                     <a href="#" class="article-events__link link-more">
                       Подробнее
                     </a>
-                  </div>
                 </div>
               </article>
             </li>
@@ -987,11 +992,9 @@
                   <p class="article-events__descr desc">
                     Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений
                   </p>
-                  <div>
                     <a href="#" class="article-events__link link-more">
                       Подробнее
                     </a>
-                  </div>
                 </div>
               </article>
             </li>
@@ -1020,11 +1023,9 @@
                   <p class="article-events__descr desc">
                     Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо
                   </p>
-                  <div>
                     <a href="#" class="article-events__link link-more">
                       Подробнее
                     </a>
-                  </div>
                 </div>
               </article>
             </li>
@@ -1053,22 +1054,20 @@
                   <p class="article-events__descr desc">
                     Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
                   </p>
-                  <div>
                     <a href="#" class="article-events__link link-more">
                       Подробнее
                     </a>
-                  </div>
                 </div>
               </article>
             </li>
           </ul>
           <div class="swiper-pagination-events"></div>
         </div>
-        <div class="swiper-button-next-events swiper-btn-general">
+        <div class="swiper-button-next-events swiper-btn-general swiper-button-next">
           <svg class="swiper-svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="swiper-btn-fill"  d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" fill="#ECECEC"/>
           <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" stroke="none"/>
-          <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"/>
+          <path class="swiper-btn-stroke" d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"/>
           </svg>
         </div>
       </div>
@@ -1174,14 +1173,14 @@
           <svg class="swiper-svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="swiper-btn-fill" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
             <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="none"/>
-            <path d="M16 20L11 15L16 10" stroke="black"/>
+            <path class="swiper-btn-stroke" d="M16 20L11 15L16 10" stroke="black"/>
             </svg>
         </div>
         <div class="swiper-button-next-projects swiper-btn-general">
           <svg class="swiper-svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="swiper-btn-fill" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
             <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="none"/>
-            <path d="M14 20L19 15L14 10" stroke="black"/>
+            <path class="swiper-btn-stroke" d="M14 20L19 15L14 10" stroke="black"/>
             </svg>
         </div>
       </div>
