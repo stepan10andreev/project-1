@@ -194,7 +194,7 @@
 
   /*hero*/
   .hero {
-    padding: 105px 0px 134px 0px;
+    padding: 105px 0px 114px 0px;
   }
 
   .hero__content {
@@ -206,7 +206,7 @@
   }
 
   .hero__descr {
-    margin-bottom: 155px;
+    margin-bottom: 130px;
   }
 
   .hero__slide--image1 {
@@ -958,7 +958,7 @@
   /*hero*/
   .hero {
   padding-top: 29px;
-  padding-bottom: 56px;
+  padding-bottom: 46px;
   }
 
   .hero__container {
@@ -972,7 +972,7 @@
 
   .hero__descr {
     width: 85%;
-    margin-bottom: 51px;
+    margin-bottom: 42px;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -1175,9 +1175,6 @@
     line-height: 25px
   }
 
-  .contacts__container {
-    gap: 22px;
-  }
 
   .contacts__address {
     font-weight: 400;
@@ -1188,6 +1185,7 @@
   .contacts__container {
     padding-bottom: 17px;
     border: none;
+    gap: 21px;
   }
 
   .contacts-form__input {
@@ -1197,6 +1195,7 @@
   }
 
   .contacts-form__btn {
+    align-self: flex-start;
     width: 129px;
     font-weight: 700;
     font-size: 12px;

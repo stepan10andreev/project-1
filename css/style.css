@@ -1099,6 +1099,7 @@ img {
 .accordion__painter-list {
   padding: 25px 0;
   columns: auto 3;
+  padding-right: 55px;
 }
 
 .accordion__painter-list hr {
