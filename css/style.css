@@ -1173,17 +1173,24 @@ img {
   border-color: var(--background-violet-normal);
 }
 
+.accordion--active .accordion__btn,
 .accordion__btn:active {
   border-color: var(--background-violet-dark);
 }
 
+.accordion--active .accordion-btn__name,
 .accordion__btn:active .accordion-btn__name{
   color: var(--background-violet-dark);
 }
 
+.accordion--active .accordion-btn__svg,
 .accordion__btn:active .accordion-btn__svg {
   border: 2px solid var(--background-violet-dark);
   border-radius: 100px;
+}
+
+.accordion--active .accordion-btn__fill {
+  fill: #D1A9F0;
 }
 
 
@@ -1203,6 +1210,8 @@ img {
 .accordion--active svg {
   transform: rotate(180deg);
 }
+
+
 
 /*catalog-accordeon-tabs*/
 
@@ -1558,19 +1567,19 @@ img {
   border-radius: 100px;
 }
 
-/* .swiper-button-prev-projects.swiper-button-prev.swiper-button-disabled .swiper-btn-fill,
-.swiper-button-next-events.swiper-button-next.swiper-button-disabled .swiper-btn-fill {
+.swiper-btn-general.swiper-button-disabled .swiper-btn-fill {
   fill: #ECECEC;
 }
 
-.swiper-button-prev-projects.swiper-button-disabled .swiper-btn-stroke,
-.swiper-button-next-events.swiper-button-disabled .swiper-btn-stroke {
-  stroke: red;
+.swiper-btn-general.swiper-button-disabled .swiper-btn-stroke {
+  stroke: #CACACA;
+
+}
+.swiper-btn-general.swiper-button-disabled .swiper-svg {
+  outline: none;
+  fill: none;
 }
 
-.swiper-button-next-events.swiper-button-disabled .swiper-svg {
-  outline: none;
-} */
 
 
 /*contacts*/

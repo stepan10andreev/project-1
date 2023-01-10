@@ -61,13 +61,14 @@ const swiper = new Swiper('.swiper', {
 
 
 
-new Accordion('.accordion-list', {
+const accordion = new Accordion('.accordion-list', {
 	elementClass: 'accordion',
 	triggerClass: 'accordion__control',
 	panelClass: 'accordion__content',
 	activeClass: 'accordion--active'
 });
 
+accordion.open(0);
 
 
 
@@ -122,6 +123,7 @@ var swiper2 = new Swiper ('.events-swiper', {
     prevEl: '.swiper-button-prev-events'
   },
 
+
   pagination: {
     el: '.swiper-pagination-events',
     type: 'bullets',
@@ -140,7 +142,6 @@ var swiper3 = new Swiper ('.projects-swiper', {
   slidesPerView: 3,
   slidesPerGroup: 3,
   loop: true,
-  allowTouchMove: true,
   breakpoints: {
     // when window width is >= 320px
     0: {
@@ -178,17 +179,17 @@ var swiper3 = new Swiper ('.projects-swiper', {
 
 });
 
-const swiper3Prev = document.querySelector('.swiper-button-prev-projects')
+// const swiper3Prev = document.querySelector('.swiper-button-prev-projects')
 
-swiper3Prev.addEventListener('click', () => {
-  swiper3.slidePrev();
-});
+// swiper3Prev.addEventListener('click', () => {
+//   swiper3.slidePrev();
+// });
 
-const swiper3Next = document.querySelector('.swiper-button-next-projects')
+// const swiper3Next = document.querySelector('.swiper-button-next-projects')
 
-swiper3Next.addEventListener('click', () => {
-  swiper3.slideNext();
-});
+// swiper3Next.addEventListener('click', () => {
+//   swiper3.slideNext();
+// });
 
 
 
@@ -261,6 +262,7 @@ menuLink.forEach(function(link){
       document.querySelector(`[data-target="${path}"]`).classList.toggle('dropdown__list--active');
       dropTwo.currentTarget.classList.toggle('btn--active');
     })
+
 
     dropdownList.forEach(function(link){ link.classList.remove('dropdown__list--active')});
     document.querySelector(`[data-target="${path}"]`).classList.add('dropdown__list--active');
