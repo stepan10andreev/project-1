@@ -5,6 +5,8 @@ require 'phpmailer/Exception.php';
 
 $title = "Текст письма";
 
+$c = true;
+
 $title = "Заголовок письма";
 foreach ( $_POST as $key => $value ) {
   if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
@@ -33,10 +35,10 @@ try {
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('lokopiter10@mail.ru', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('stepan10andreev@mail.ru', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('lokopiter10@mail.ru');
+  $mail->addAddress('stepan10andreev@mail.ru');
 
   // // Прикрипление файлов к письму
   // if (!empty($file['name'][0])) {
