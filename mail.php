@@ -28,8 +28,8 @@ try {
 
   // Настройки вашей почты
   $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-  $mail->Username   = 'lokopiter10@mail.ru'; // Логин на почте
-  $mail->Password   = 'Tf8RqaqdaQtAUgqBreYb'; // Пароль на почте
+  $mail->Username   = 'stepan10andreev@mail.ru'; // Логин на почте
+  $mail->Password   = 'LxX2mnenaBnk7KkCZsnj'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
