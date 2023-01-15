@@ -955,16 +955,15 @@ img {
   border-radius: 100px;
 }
 
-
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+.gallery__swiper-button.swiper-button-disabled {
   opacity: 1;
 }
 
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled .swiper-button-fill {
+.gallery__swiper-button.swiper-button-disabled .swiper-button-svg {
   fill: #ECECEC;
 }
 
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled .swiper-button-stroke {
+.gallery__swiper-button.swiper-button-disabled .swiper-button-stroke {
   stroke: #CACACA;;
 }
 
